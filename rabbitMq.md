@@ -6,7 +6,7 @@ AMQP：Advanced Message Queuing Protocol  高级消息队列协议
 
 AMQP：
 
-![image-20211204114117050](C:\Users\16014\AppData\Roaming\Typora\typora-user-images\image-20211204114117050.png)
+![image-20211204114117050](poto\image-20211204114117050.png)
 
 AMQP核心概念：
 
@@ -60,7 +60,7 @@ Routing Key：一个路由规则，虚拟机可用它确定如何路由一个特
 
 1.消息落库，对消息状态进行达标
 
-![image-20211204115922276](C:\Users\16014\AppData\Roaming\Typora\typora-user-images\image-20211204115922276.png)
+![image-20211204115922276](poto\image-20211204115922276.png)
 
 2.确认机制和返回机制
 
@@ -68,7 +68,7 @@ Confirm确认消息：
 
 消息确认，生产者投递消息，如果broker接受到消息，给生产者一个应答，生产者接受到应答，确认消息是否正常发送到Broker
 
-![image-20211204120156871](C:\Users\16014\AppData\Roaming\Typora\typora-user-images\image-20211204120156871.png)
+![image-20211204120156871](poto\image-20211204120156871.png)
 
 Confirm确认消息实现：
 
@@ -144,7 +144,7 @@ Routing key :#
 
 Mirror镜像队列，目的是为了保证rabbitmq数据 的高可靠性解决方案，主要就是现实数据同步，一般来讲2-3个节点实现数据同步(对于100%数据可靠性解决方案一般是3个节点）集群架构如下：
 
-![image-20211204125319797](C:\Users\16014\AppData\Roaming\Typora\typora-user-images\image-20211204125319797.png)
+![image-20211204125319797](poto\image-20211204125319797.png)
 
 ## RabbitMq整合SpringBoot
 
@@ -166,4 +166,4 @@ spring.rabbitmq.listener.simple.max-concurrency = 5
 
 ### @RabbitListener注解
 
-![image-20211204130010054](C:\Users\16014\AppData\Roaming\Typora\typora-user-images\image-20211204130010054.png)
+![image-20211204130010054](poto\image-20211204130010054.png)
